@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+  background: #A8A8AC;
+}
+.container{
+  width: 100%;
+}
+
+.create_list{
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 32%;
+  z-index: 1;
+  padding: 20px 30px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+}
+  /*  */
+  /* active?deactive */
+.active_deactive_form{
+  display: flex; 
+  align-items: center;
+  width: 100%;
+}
+.active_deactive_form h3{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03px;
+  color: #00000099;
+  opacity: 1;
+  flex: 1;
+}
+.active_deactive_form form{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.active_deactive_form form div{
+  align-items: center;
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+label{
+  line-height: 24px;
+}
+
+
+/* checkbox */
+/* enable */
+.enable input[type="checkbox"] + label[for="users"] {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+}
+
+.enable input[type="checkbox"] {
+  display: none;
+}
+.enable input[type="checkbox"] + label[for="users"]:active:before {
+  transform: scale(0);
+}
+
+.enable input[type="checkbox"] + label[for="users"]:before{
+  content: '\2714';
+  display: inline-block;
+  width: 18px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 13.5px;
+  padding-left: 0.5em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  background-color: grey;
+  color: white;
+  transition: 0.2s;
+  margin-right: 12px;
+}
+.enable input[type="checkbox"]:checked + label[for="users"]:before {
+  background-color: green;
+  color: #fff;
+  border-color: green;
+} 
+
+/* disable */
+.disable input[type="checkbox"] + label[for="users_two"] {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+}
+
+.disable input[type="checkbox"] {
+  display: none;
+}
+.disable input[type="checkbox"] + label[for="users_two"]:active:before {
+  transform: scale(0);
+}
+
+.disable input[type="checkbox"] + label[for="users_two"]:before{
+  content: '\2714';
+  display: inline-block;
+  width: 18px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 13.5px;
+  padding-left: 0.5em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  background-color: grey;
+  color: white;
+  transition: 0.2s;
+  margin-right: 12px;
+}
+.disable input[type="checkbox"]:checked + label[for="users_two"]:before{
+  background-color: green;
+  color: #fff;
+  border-color: green;
+} 
+
+/* details */
+.details{
+  margin-top: 25px
+}
+
+.details h3{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #707070;
+  opacity: 1;
+}
+.details h3 + h3{
+  margin-top: 10px;
+}
+
+.openSans{
+  font-family: 'Open Sans', sans-serif;
+
+}
